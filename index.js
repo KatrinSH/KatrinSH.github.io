@@ -7,9 +7,5 @@ button.addEventListener("click", function () {
 });
 
 function myFunk() {
-  Swal.fire(
-    'The Internet?',
-    'That thing is still around?',
-    'question'
-  );
+ alert(document.getElementById("a").value);
 }
