@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hover-transition {
+    transition: color 0.2s ease-in-out;
+}
+
+html,body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header, footer {
+    display: flex;
+}
+
+main {
+    flex: 1;
+}

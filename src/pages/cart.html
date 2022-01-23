@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="../assets/css/dist/style.css">
+</head>
+
+<body style="height: 100% !important">
+    <header class="bg-[#F5F5F5]">
+        <div class="container mx-auto flex items-center justify-between h-20">
+            <nav>
+                <ul class="flex">
+                    <li class="mr-3">
+                        <a href="/src/pages/index.html"
+                            class="flex p-4 text-sm hover:text-pink border-2 border-transparent hover:border-b-pink hover-transition">Home</a>
+                    </li>
+                    <li class="mr-3">
+                        <a href="#"
+                            class="flex p-4 text-sm hover:text-pink border-2 border-transparent hover:border-b-pink hover-transition">Clothes</a>
+                    </li>
+                    <li class="mr-3">
+                        <a href="#"
+                            class="flex p-4 text-sm hover:text-pink border-2 border-transparent hover:border-b-pink hover-transition">Shoes</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="flex p-4 text-sm hover:text-pink border-2 border-transparent hover:border-b-pink hover-transition">Accessories</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="/src/pages/index.html" class="block">
+                <img src="../assets/images/icons/logo.svg" alt="" srcset="">
+            </a>
+            <div class="flex">
+                <div class="flex ">
+                    <input type="search" placeholder="Search.."
+                        class="border-b border-black text-xs w-48 focus:outline-none bg-[#F5F5F5]">
+                    <img src="../assets/images/icons/search-icon.svg" alt="" srcset="">
+
+                </div>
+
+                <ul class="flex ml-7">
+                    <li class="mr-7 ">
+                        <a href="#">
+                            <img src="../assets/images/icons/profile-icon.svg" alt="" srcset="">
+                        </a>
+                    </li>
+                    <li class="mr-7 ">
+                        <a href="/src/pages/cart.html">
+                            <img src="../assets/images/icons/bucket-icon.svg" alt="" srcset="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../assets/images/icons/heart-icon.svg" alt="" srcset="">
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </header>
+    <main class="py-7">
+        <div class="container xl:max-w-6xl mx-auto ">
+            <h1 class="text-2xl font-bold mb-16"> Shopping Cart </h1>
+            <div class="cart-header-items grid grid-cols-6 mb-3">
+                <span class="col-span-3 text-base text-[#686868]">ITEM DESCRIPTION</span>
+                <span class="col-span-1 text-base text-[#686868]">QUANTITY</span>
+                <span class="col-span-1 text-base text-[#686868]">UNIT PRICE</span>
+                <span class="col-span-1 text-base text-[#686868]">SUB TOTAL</span>
+            </div>
+            <div id="cart-no-items-info" class="h-[145px] w-full flex justify-center items-center"
+                style="display: none;">
+                No items in cart
+            </div>
+            <div id="product-1" class="product-cart grid grid-cols-6 mb-6"
+                style="box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);">
+                <div class="flex col-span-3 border-r px-3 py-3">
+                    <div class="h-[86px] w-[86px]">
+                        <img src="../assets/images/products/product-for-card.png" alt="" srcset="">
+                    </div>
+                    <div class="flex col-span-3 flex-col items-start px-6 py-3">
+                        <span class="text-sm"> Casual flat loafers </span>
+                        <span class="text-xs  text-[#686868]">Size - EU: 36 US: 5.5 </span>
+                        <button class="flex mt-auto">
+                            <img src="../assets/images/icons/Heart-pink-icon.svg" alt="" srcset="">
+                            <span class="text-xs text-pink px-2">MOVE TO FAVORITES</span>
+                        </button>
+                    </div>
+                    <div class="flex px-6 py-3">
+                        <button class="flex mt-auto">
+                            <img src="../assets/images/icons/chest-icon.svg" alt="" srcset="">
+                            <span class="cart-delete-item text-pink px-2 text-xs">REMOVE</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="flex col-span-1 w-full h-full justify-center items-center border-r">
+                    <div class="flex items-center w-[86px] justify-center border-b border-[#C4C4C4] flex-row">
+                        <button class="remove-count-items cursor-pointer px-2">-</button>
+                        <span class="count-items block mx-5">1</span>
+                        <button class="add-count-items cursor-pointer px-2">+</button>
+                    </div>
+                </div>
+                <div class="border-r col-auto flex items-center justify-center ">
+                    <span>
+                        ₦ <span class="cart-unit-price">10000</span>
+                    </span>
+                </div>
+                <div class="border-r col-auto flex items-center justify-center">
+                    <span>
+                        ₦ <span class="cart-subtotal">10000</span>
+                    </span>
+                </div>
+            </div>
+            <div id="product-2" class="product-cart grid grid-cols-6"
+                style="box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);">
+                <div class="flex col-span-3 border-r px-3 py-3">
+                    <div class="h-[86px] w-[86px]">
+                        <img src="../assets/images/products/product2-for-card.png" alt="" srcset="">
+                    </div>
+                    <div class="flex col-span-3 flex-col items-start px-6 py-3">
+                        <span class="text-sm"> Multicolored armless top </span>
+                        <span class="text-xs  text-[#686868]">Size - XS</span>
+                        <button class="flex mt-auto">
+                            <img src="../assets/images/icons/Heart-pink-icon.svg" alt="" srcset="">
+                            <span class="text-xs text-pink px-2">MOVE TO FAVORITES</span>
+                        </button>
+                    </div>
+                    <div class="flex px-6 py-3">
+                        <button class="cart-delete-item flex mt-auto">
+                            <img src="../assets/images/icons/chest-icon.svg" alt="" srcset="">
+                            <span class="text-pink px-2 text-xs">REMOVE</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="flex col-span-1 w-full h-full justify-center items-center border-r">
+                    <div class="flex items-center w-[86px] justify-center border-b border-[#C4C4C4] flex-row">
+                        <button class="remove-count-items cursor-pointer px-2">-</button>
+                        <span class="count-items block mx-5">1</span>
+                        <button class="add-count-items cursor-pointer px-2">+</button>
+                    </div>
+                </div>
+                <div class="border-r col-auto flex items-center justify-center ">
+                    <span>
+                        ₦ <span class="cart-unit-price">10000</span>
+                    </span>
+                </div>
+                <div class="border-r col-auto flex items-center justify-center">
+                    <span>
+                        ₦ <span class="cart-subtotal">10000</span>
+                    </span>
+                </div>
+            </div>
+
+            <div class="flex items-end flex-col">
+                <div class="flex flex-row mb-4 mt-16">
+                    <span class="block mr-16">TOTAL:</span>
+                    <span>₦ <span class="cart-total">20000</span></span>
+                </div>
+                <span class="text-xs">Delivery fee not included yet</span>
+            </div>
+
+            <div class="flex justify-end mt-16">
+                <a href="/src/pages/index.html" class="border  border-pink py-2 px-10 text-xs font-bold rounded-md mr-16 ">
+                    CONTINUE SHOPPING
+                </a>
+                <button class="bg-pink text-white py-2 px-10 text-xs font-bold rounded-md">
+                    PROCEED TO CHECKOUT
+                </button>
+            </div>
+
+        </div>
+    </main>
+    <footer class="bg-[#F5F5F5]  ">
+        <div class="container mx-auto flex items-center justify-center py-16 ml-10">
+            <a href="/src/pages/index.html" class="block">
+                <img src="../assets/images/icons/logo.svg" alt="" srcset="">
+            </a>
+            <nav>
+                <ul class="flex flex-col items-center px-5 text-xs">
+                    <li>
+                        <a href="#"
+                            class="flex p-2  text-sm hover:text-pink border-2 border-transparent hover:border-b-pink hover-transition">About
+                            us</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="flex p-2 text-sm hover:text-pink border-2 border-transparent hover:border-b-pink hover-transition">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="flex p-2 text-sm hover:text-pink border-2 border-transparent hover:border-b-pink hover-transition">Terms
+                            & Conditions</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="flex ml-10 ">
+                <ul class="flex  flex-col  px-5 ">
+                    <li>
+                        <a href="#" class="flex flex-row p-2 text-sm">
+                            <img src="../assets/images/icons/facebook-icon.svg" alt="" srcset="">
+                            <span class="px-4">Facebook</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex flex-row p-2 text-sm ">
+                            <img src="../assets/images/icons/instagram-icon.svg" alt="" srcset="">
+                            <span class="px-2">Instagram</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex flex-row p-2 text-sm ">
+                            <img src="../assets/images/icons/twitter-icon.svg" alt="" srcset="">
+                            <span class="px-2">Twitter</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="ml-10">
+                    <span class="mb-5 block">
+                        Subscribe to our newsletter
+                    </span>
+                    <div class="flex">
+                        <input type="email" id="email" placeholder="Email Address"
+                            class="border text-xs w-48 text-center focus:outline-none border-pink">
+
+                        <button id="OK" class="bg-pink text-xs py-3 px-5  text-white">
+                            OK
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
