@@ -1,0 +1,44 @@
+[
+    
+    {
+        "name": "Tambourine Crossbody Bag ",
+        "price": "6000",
+        "img": "../assets/images/products/product-24.jpg"
+    },
+    {
+        "name": "Summer Handbag",
+        "price": "4000",
+        "img": "../assets/images/products/product-25.jpg"
+    },
+    {
+        "name": "Tear-drop stone necklace",
+        "price": "15000",
+        "img": "../assets/images/products/product-26.jpg"
+    },
+    {
+        "name": "Ladies luxury watch",
+        "price": "10000",
+        "img": "../assets/images/products/product-27.jpg"
+    },
+    {
+        "name": "Black ladies backpack",
+        "price": "8000",
+        "img": "../assets/images/products/product-28.jpg"
+    },
+    {
+        "name": "Black ladies backpack",
+        "price": "4000",
+        "img": "../assets/images/products/product-29.jpg"
+    },
+    {
+        "name": "Nereide Oval",
+        "price": "2000",
+        "img": "../assets/images/products/product-30.jpg"
+    },
+    {
+        "name": "Beanie winter fleece",
+        "price": "3000",
+        "img": "../assets/images/products/product-31.jpg"
+    }
+    
+]

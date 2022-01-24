@@ -1,0 +1,40 @@
+[{
+    "name": "High heels ladies shoes",
+    "price": "9000",
+    "img": "../assets/images/products/product-15.jpg"
+},
+{
+    "name": "Guilhermina Embellished Slides",
+    "price": "10000",
+    "img": "../assets/images/products/product-17.jpg"
+},
+{
+    "name": "Black strappy peeptoe",
+    "price": "5000",
+    "img": "../assets/images/products/product-18.jpg"
+},
+{
+    "name": "Heeled sandals",
+    "price": "12000",
+    "img": "../assets/images/products/product-19.jpg"
+},
+{
+    "name": "Superga Platform Sneakers",
+    "price": "15000",
+    "img": "../assets/images/products/product-20.jpg"
+},
+{
+    "name": "Casual Flat Sandals",
+    "price": "6000",
+    "img": "../assets/images/products/product-21.jpg"
+},
+{
+    "name": "Summer Cork Slippers",
+    "price": "9000",
+    "img": "../assets/images/products/product-22.jpg"
+},
+{
+    "name": "Casual Flat Loafers",
+    "price": "8000",
+    "img": "../assets/images/products/product-23.jpg"
+}]
